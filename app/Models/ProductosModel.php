@@ -5,16 +5,13 @@ use CodeIgniter\Model;
 
 class ProductosModel extends Model
 {
-
     protected $table      = 'productos';
     protected $primaryKey = 'id';
-
-    //protected $useAutoIncrement = true;
-
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['codigo','nombre','activo'];
+    protected $allowedFields = ['codigo','nombre','precio_venta','precio_compra','existencias',
+    'stock_minimo','inventariable','id_unidad','id_categoria','activo'];
 
     // Dates
     protected $useTimestamps = true;
