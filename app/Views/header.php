@@ -8,11 +8,10 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
   <title>Tables - SB Admin</title>
-  <link href="<?php echo base_url();?>css/style.min.css" rel="stylesheet" />
-  <link href="<?php echo base_url();?>css/styles.css" rel="stylesheet" />
-  <script src="<?php echo base_url();?>js/all.js" crossorigin="anonymous"></script>
+  <link href="<?php echo base_url(); ?>css/style.min.css" rel="stylesheet" />
+  <link href="<?php echo base_url(); ?>css/styles.css" rel="stylesheet" />
+  <script src="<?php echo base_url(); ?>js/all.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
 </head>
 
 <body class="sb-nav-fixed">

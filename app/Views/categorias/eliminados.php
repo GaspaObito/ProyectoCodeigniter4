@@ -4,8 +4,8 @@
             <h4 class="mt-4"><?php echo $titulo; ?></h4>
             <div>
                 <p>
-                    <a href="<?php echo base_url(); ?>categorias" class="btn btn-warning"> Categorias</a>
-                </p>
+                    <a href="<?php echo base_url(); ?>categorias" class="btn btn-warning"> Categorias</a </p>
+
             </div>
             <ol class="breadcrumb mb-4">
                 <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
@@ -29,17 +29,18 @@
                         <thead>
                             <tr>
                                 <th>Id</th>
-                                <th>Nombre</th>
+                                <th>Nombre</th>                                
                                 <th></th>
                             </tr>
                         </thead>
+
                         <tbody>
                             <?php foreach ($datos as $dato) { ?>
 
                                 <tr>
                                     <td> <?php echo $dato['id']; ?> </td>
-                                    <td> <?php echo $dato['nombre']; ?> </td>
-                                    <td>  <a href="#"
+                                    <td> <?php echo $dato['nombre']; ?> </td>                                    
+                                    <td> <a href="#"
                                             data-href="<?php echo base_url() . '/categorias/reingresar/' . $dato['id']; ?>"
                                             data-bs-toggle="modal" data-bs-target="#modal-confirma"
                                             title="Reingresar registro" class="btn btn-primary">
@@ -54,8 +55,8 @@
             </div>
         </div>
     </main>
-        <!-- Modal -->
-        <div class="modal fade" id="modal-confirma" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal -->
+    <div class="modal fade" id="modal-confirma" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-header">

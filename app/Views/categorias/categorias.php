@@ -14,10 +14,7 @@
             </ol>
             <div class="card mb-4">
                 <div class="card-body">
-                    DataTables is a third party plugin that is used to generate the demo table below. For more
-                    information about DataTables, please visit the
-                    <a target="_blank" href="https://datatables.net/">official DataTables documentation</a>
-                    .
+                    Tabla de Categorias con Nombre
                 </div>
             </div>
             <div class="card mb-4">
@@ -30,7 +27,7 @@
                         <thead>
                             <tr>
                                 <th>Id</th>
-                                <th>Nombre</th>
+                                <th>Nombre</th>                                
                                 <th></th>
                                 <th></th>
                             </tr>
@@ -39,11 +36,11 @@
                             <?php foreach ($datos as $dato) { ?>
                                 <tr>
                                     <td> <?php echo $dato['id']; ?> </td>
-                                    <td> <?php echo $dato['nombre']; ?> </td>
+                                    <td> <?php echo $dato['nombre']; ?> </td>                                    
                                     <td> <a href="<?php echo base_url() . '/categorias/editar/' . $dato['id']; ?> "
                                             class="btn btn-warning"><i class="fas fa-pencil-alt"></i></a>
                                     </td>
-                                    <td>  <a href="#"
+                                    <td> <a href="#"
                                             data-href="<?php echo base_url() . '/categorias/eliminar/' . $dato['id']; ?>"
                                             data-bs-toggle="modal" data-bs-target="#modal-confirma"
                                             title="Eliminar registro" class="btn btn-danger">
@@ -58,8 +55,8 @@
             </div>
         </div>
     </main>
-     <!-- Modal -->
-     <div class="modal fade" id="modal-confirma" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal -->
+    <div class="modal fade" id="modal-confirma" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-header">

@@ -4,9 +4,9 @@
             <h4 class="mt-4"> <?php echo $titulo; ?> </h4>
             <?php \Config\Services::validation()->listErrors(); ?>
             <form method="POST" action="<?php echo base_url(); ?>/productos/actualizar" autocomplete="off">
-            <?php csrf_field(); ?> 
-            <input type="hidden" id="" name="id" value="<?php echo $producto['id']; ?>" />
-            <div class="form-group">
+                <?php csrf_field(); ?>
+                <input type="hidden" id="id" name="id" value="<?php echo $producto['id']; ?>" />
+                <div class="form-group">
                     <div class="row pb-2">
                         <div class="col-12 col-sm-6">
                             <label>Codigo</label>
@@ -14,7 +14,7 @@
                         </div>
                         <div class="col-12 col-sm-6">
                             <label>Nombre</label>
-                            <input class="form-control" id="nombre" name="nombre" type="text" value="<?php echo $producto['nombre']; ?>" required />
+                            <input class="form-control" id="nombre" name="nombre" type="text" value="<?php echo $producto['nombre']; ?>"required />
                         </div>
                     </div>
                 </div>
@@ -51,7 +51,8 @@
                     <div class="row pb-2">
                         <div class="col-12 col-sm-6">
                             <label>Precio venta</label>
-                            <input class="form-control" id="precio_venta" name="precio_venta" type="text"  value="<?php echo $producto['precio_venta']; ?>" required />
+                            <input class="form-control" id="precio_venta" name="precio_venta" type="text" value="<?php echo $producto['precio_venta']; ?>"
+                                required />
                         </div>
                         <div class="col-12 col-sm-6">
                             <label>Precio compra</label>
@@ -64,7 +65,8 @@
                     <div class="row pb-2">
                         <div class="col-12 col-sm-6">
                             <label>Stock minimo</label>
-                            <input class="form-control" id="stock_minimo" name="stock_minimo" type="text"  value="<?php echo $producto['stock_minimo']; ?>" required />
+                            <input class="form-control" id="stock_minimo" name="stock_minimo" type="text" value="<?php echo $producto['stock_minimo']; ?>"
+                                required />
                         </div>
                         <div class="col-12 col-sm-6">
                             <label>Es inventariable</label>

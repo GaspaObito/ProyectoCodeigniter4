@@ -24,7 +24,7 @@
                             <label>Unidad</label>
                             <select class="form-control" id="id_unidad" name="id_unidad" required>
                                 <option value="">Seleccionar unidad</option>
-                                <?php foreach ($unidades as $unidad) { ?>
+                                <?php foreach($unidades as $unidad) { ?>
                                     <option value="<?php echo $unidad['id']; ?>">
                                         <?php echo $unidad['nombre']; ?>
                                     </option>

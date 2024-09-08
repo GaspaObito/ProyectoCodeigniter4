@@ -4,7 +4,7 @@
             <h4 class="mt-4"><?php echo $titulo; ?></h4>
             <div>
                 <p>
-                    <a href="<?php echo base_url(); ?>productos" class="btn btn-warning"> Productos</a </p>
+                    <a href="<?php echo base_url(); ?>/productos" class="btn btn-warning"> Productos</a </p>
 
             </div>
             <ol class="breadcrumb mb-4">
@@ -28,19 +28,20 @@
                     <table id="datatablesSimple">
                         <thead>
                             <tr>
-                                <th>Id</th>
+                            <th>Id</th>
                                 <th>Codigo</th>
                                 <th>Nombre</th>
                                 <th>Precio</th>
                                 <th>Existencias</th>
-                                <th></th>
+                                <th></th>                                
                             </tr>
                         </thead>
 
                         <tbody>
                             <?php foreach ($datos as $dato) { ?>
+
                                 <tr>
-                                    <td> <?php echo $dato['id']; ?> </td>
+                                <td> <?php echo $dato['id']; ?> </td>
                                     <td> <?php echo $dato['codigo']; ?> </td>
                                     <td> <?php echo $dato['nombre']; ?> </td>
                                     <td> <?php echo $dato['precio_venta']; ?> </td>

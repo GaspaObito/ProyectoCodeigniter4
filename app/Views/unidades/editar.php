@@ -2,7 +2,7 @@
     <main>
         <div class="container-fluid px-4">
             <h4 class="mt-4"> <?php echo $titulo; ?> </h4>
-            <form method="POST" action="<?php echo base_url(); ?>/categorias/actualizar" autocomplete="off">
+            <form method="POST" action="<?php echo base_url(); ?>/unidades/actualizar" autocomplete="off">
                 <input type="hidden" value="<?php echo $datos['id']; ?>" name="id" />
                 <div class="form-group">
                     <div class="row pb-2">

@@ -29,7 +29,7 @@ class Categorias extends BaseController
     }
     public function nuevo()
     {
-        $data = ['titulo' => 'Agregar Categorias'];
+        $data = ['titulo' => 'Agregar Categoria'];
         echo view('header');
         echo view('categorias/nuevo', $data);
         echo view('footer');
@@ -39,26 +39,23 @@ class Categorias extends BaseController
         $this->categorias->save(['nombre' => $this->request->getPost('nombre')]);
         return redirect()->to(base_url() . '/categorias');
     }
-    //
     public function editar($id)
     {
-        $categoria = $this->categorias->where('id', $id)->first();
-        $data = ['titulo' => 'Actualizar Categoria', 'datos' => $categoria];
+        $unidad = $this->categorias->where('id', $id)->first();
+        $data = ['titulo' => 'Editar categoria', 'datos' => $unidad];
         echo view('header');
         echo view('categorias/editar', $data);
         echo view('footer');
     }
     public function actualizar()
     {
-        $this->categorias->update($this->request->getpost('id'), [
-            'nombre' =>
-                $this->request->getPost('nombre')
-        ]);
+        $this->categorias->update($this->request->getPost('id'),
+        ['nombre' =>$this->request->getPost('nombre'),]);
         return redirect()->to(base_url() . '/categorias');
     }
     public function eliminar($id)
     {
-        $this->categorias->update($id, ['activo' => 0]);
+        $this->categorias->update($id,['activo' =>0]);
         return redirect()->to(base_url() . '/categorias');
     }
     public function reingresar($id)
